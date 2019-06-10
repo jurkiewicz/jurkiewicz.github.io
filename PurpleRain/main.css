@@ -1,0 +1,9 @@
+body{
+	background: #e6e6ff;
+	margin: 0px;
+	z-index: 1;
+}
+.drop{
+	background: #8a2be2;
+	position: absolute;
+}

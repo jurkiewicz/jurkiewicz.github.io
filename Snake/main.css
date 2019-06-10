@@ -1,0 +1,100 @@
+body{
+	background: #161616;
+	margin: 0px;
+	color: #ffffff;
+	font-family: monospace;
+}
+#container{
+	width: 800px;
+	height: 450px;
+	background: #000000;
+}
+.apple{
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	width: 24px;
+	height: 24px;
+	background: #d50007;
+	position: absolute;
+	z-index: 0;
+}
+.snake{
+	width: 24px;
+	height: 24px;
+	background: #ffffff;
+	position: absolute;
+	z-index: 1;
+}
+.good{
+	background: #84ff00;
+}
+.bad{
+	background: #f00;
+}
+#word{	
+	width: 200px;
+	height: 105px;
+	left: 805px;
+	top: 0px;
+	text-align: center;
+	background: #000000;
+	position: absolute;
+	font-size: 35px;
+	padding: 172.5px 0;
+	z-index: 2;
+}
+#score{	
+	width: 200px;
+	height: 20px;
+	left: 805px;
+	top: 16px;
+	text-align: center;
+	background: #000000;
+	position: absolute;
+	font-size: 35px;
+	z-index: 2;
+}
+#end{
+	width: 800px;
+	height: 105px;
+	text-align: center;
+	background: #000000;
+	visibility: hidden;
+	position: absolute;
+	font-size: 35px;
+	padding: 172.5px 0;
+	z-index: 2;
+}
+#menu{
+	width: 800px;
+	height: 105px;
+	text-align: center;
+	background: #000000;
+	visibility: visible;
+	position: absolute;
+	font-size: 35px;
+	z-index: 2;
+}
+button{
+	width: 100px;
+	height: 40px;
+	left: 350px;
+	text-align: center;
+	background: #202020;
+	position: absolute;
+	font-size: 20px;
+	color: #bbbbbb;
+	border: none;
+	margin: 2px;
+}
+button:hover{
+	background: #bbbbbb;
+	color: #202020;
+}
+#start{
+	width: 200px;
+	height: 50px;
+	left: 300px;
+	visibility: hidden;
+}
