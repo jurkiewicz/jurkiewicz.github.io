@@ -8,6 +8,7 @@ body {
   padding: 0;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 1.6rem;
+  color: #000;
 }
 
 a {
@@ -17,7 +18,9 @@ a {
 }
 
 p {
-  color: #A2A2A2;
+  /* color: #A2A2A2; */
+  opacity: .6;
+  z-index: -1;
 }
 
 h3{
@@ -168,7 +171,9 @@ button:active{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  color: #a7a7a7;
+  opacity: .6;
+  z-index: -1;
+  /* color: #a7a7a7; */
 }
 
 .hero {
@@ -199,7 +204,9 @@ button:active{
 
 .hero__description {
   font-size: 1.3rem;
-  color: #676767;
+  /* color: #676767; */
+  opacity: 0.7;
+  z-index: -1;
   width: 27vw;
 }
 
@@ -292,7 +299,9 @@ button:active{
 }
 
 .list__inactive {
-  color: #a2a2a2;
+  /* color: #a2a2a2; */
+  opacity: .6;
+  z-index: -1;
 }
 
 .productlist {
@@ -349,7 +358,9 @@ button:active{
 }
 
 .phone {
-  color: #A8A8A8;
+  opacity: .6;
+  z-index: -1;
+  /* color: #A8A8A8; */
 }
 
 .payment {
@@ -363,6 +374,8 @@ button:active{
 
 .exclamation {
   color: #ff6600;
+  opacity: 1;
+  z-index: -1;
 }
 
 .info {
