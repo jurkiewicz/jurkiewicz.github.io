@@ -65,6 +65,7 @@ button:active{
   background-color: transparent;
   align-self: flex-start;
   margin: 4px;
+  z-index: 2;
 }
 
 .hamburger__line {
@@ -129,7 +130,7 @@ button:active{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: baseline;
+  align-items: center;
 }
 
 .icon {
@@ -149,6 +150,8 @@ button:active{
 .search input{
   background: url(../images/search.png) no-repeat scroll;
   background-position: 95% center;
+  width: max-content;
+  align-self: center;
 }
 
 .title {
@@ -218,9 +221,11 @@ button:active{
   border: none;
   text-decoration: none;
   text-align: center;
-  padding: 8px;
+  padding: 12px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
   margin: 16px;
+  width: max-content;
+  align-self: center;
 }
 
 .button:hover {
@@ -249,6 +254,8 @@ button:active{
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
   margin: 16px;
   flex-grow: 1;
+  width: max-content;
+  align-self: center;
 }
 
 .latest {
