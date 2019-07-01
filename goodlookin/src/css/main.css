@@ -1,0 +1,385 @@
+:root {
+  box-sizing: content-box;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  padding: 8px;
+}
+
+p {
+  color: #A2A2A2;
+}
+
+h3{
+  font-family: 'lovelo';
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+  margin: 8px;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  font-family: 'lovelo';
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.hamburger {
+  width: auto;
+  height: auto;
+  padding: 12px 8px 12px 8px;
+  position: fixed;
+  border: none;
+  background-color: transparent;
+  align-self: flex-start;
+  margin: 4px;
+}
+
+.hamburger__line {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background-color: #707070;
+  transition: background-color .2s ease-out;
+}
+
+.hamburger__line::after,
+.hamburger__line::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #707070;
+}
+
+.hamburger__line::before {
+  top: -6px;
+  transition: transform .2s ease-out;
+}
+
+.hamburger__line::after {
+  top: 6px;
+  transition: transform .2s ease-out;
+}
+
+.menu {
+  width: 80vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-between;
+  background-color: #fff;
+  box-shadow: 2px 3px 12px 0px rgba(0, 0, 0, 0.75);
+  transform: translateX(-85vw);
+  transition: transform .2s ease-out;
+  padding-top: 42px;
+  padding-bottom: 16px;
+}
+
+.menu__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-left: 16px;
+}
+
+.menu__list p {
+  color: #000;
+}
+
+.menu__list li,
+.menu__list div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.arrow {
+  padding: 2px;
+  margin-left: 4px;
+}
+
+.search {
+  margin-left: -16px;
+  width: 100%;
+}
+
+.search input{
+  background: url(../images/search.png) no-repeat scroll;
+  background-position: 95% center;
+}
+
+.title {
+  width: 100vw;
+  height: 16.18vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title__img {
+  margin-top: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title__subtitle {
+  font-family: 'lovelo';
+  margin-top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #a7a7a7;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 83.82vh;
+  background-color: #E0DDD4;
+  background-image: url("../images/heroImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20vw top;
+}
+
+.hero__text {
+  margin: 16px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.hero__title {
+  font-family: 'lovelo';
+  color: #fff;
+  width: 50vw;
+}
+
+.hero__description {
+  font-size: 1.3rem;
+  color: #676767;
+  width: 27vw;
+}
+
+.button {
+  font-family: 'lovelo';
+  border-radius: 50px;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  margin: 16px;
+}
+
+.button:hover {
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.button:active {
+  transform: translateY(1px);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+.button__default {
+  background-color: #fff;
+  color: #000;
+}
+
+.input {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50px;
+  border: none;
+  text-decoration: none;
+  text-align: left;
+  padding: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  margin: 16px;
+  flex-grow: 1;
+}
+
+.latest {
+  width: 100vw;
+}
+
+.header__latest {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 16px;
+  height: 30vw;
+}
+
+.item__latest {
+  width: 12vw;
+  padding: 16px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+}
+
+.item__latest:last-child {
+  border-right: 1px solid #e5e5e5;
+}
+
+.image__item--latest {
+  max-width: 100%;
+}
+
+.products {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.choose {
+  font-family: 'lovelo';
+  margin: 16px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.list__inactive {
+  color: #a2a2a2;
+}
+
+.productlist {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 16px;
+  margin-bottom: 0;
+}
+
+.productlist li {
+  width: 25vw;
+  margin: 16px;
+}
+
+.description {
+  border-top: 1px solid #e5e5e5;
+}
+
+.image__product {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  max-width: 80%;
+}
+
+.footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.button__confirm {
+  background-color: #2ABE69;
+  color: #fff;
+  flex-grow: 0.5;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.phone {
+  color: #A8A8A8;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 16px;
+}
+
+.exclamation {
+  color: #ff6600;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 16px;
+}
+
+.copyright {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.copyright p {
+  font-size: 1rem;
+  margin: 4px;
+}
