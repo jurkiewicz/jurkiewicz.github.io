@@ -312,15 +312,25 @@ button:active {
 
 .choose {
   font-family: 'lovelo';
-  margin: 16px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
 
+.list{
+  margin: 8px;
+}
+
+.sections {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+
 .list__inactive {
   opacity: .6;
   z-index: 0;
+  margin: 8px;
 }
 
 .productlist {
@@ -627,6 +637,8 @@ button:active {
 
   .choose div {
     margin: 50px;
+    background-color: #ffffff;
+    z-index: 1;
   }
 
   .productlist {
@@ -698,5 +710,14 @@ button:active {
     width: 80vw;
     align-items: flex-start;
     padding-left: 16px;
+  }
+
+  .choose::before {
+    content: '';
+    position: absolute;
+    width: 68vw;
+    height: 2px;
+    background-color: #e5e5e5;
+    align-self: center;
   }
 }
