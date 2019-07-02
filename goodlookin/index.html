@@ -12,17 +12,22 @@
 </head>
 
 <body>
-  <div>
+  <div class="header">
     <div id="menu" class="menu">
       <nav class="menu__list">
-        <div>
-          <img src="src/images/client.png" alt="client.png" class="icon">
-          <p>Twoje konto</p>
-        </div>
-        <div>
-          <img src="src/images/cart.png" alt="cart.png" class="icon">
-          <p>269,00 zł/prod. (3)</p>
-          <a href="#" class="button button__confirm">DO KASY</a>
+        <div class="options">
+          <div class="search">
+            <input type="text" name="email" value="" label="input" placeholder="Szukaj produktu..." class="input">
+          </div>
+          <div>
+            <img src="src/images/client.png" alt="client.png" class="icon">
+            <p>Twoje konto</p>
+          </div>
+          <div>
+            <img src="src/images/cart.png" alt="cart.png" class="icon">
+            <p>269,00 zł/prod. (3)</p>
+            <a href="#" class="button button__confirm">DO KASY</a>
+          </div>
         </div>
 
         <ul>
@@ -50,23 +55,24 @@
           </li>
         </ul>
 
-        <div class="search">
-          <input type="text" name="email" value="" label="input" placeholder="Szukaj produktu..." class="input">
-        </div>
+
 
       </nav>
     </div>
+
     <button id="hamburger" type="button" name="hamburger" class="hamburger" value="hamburger">
       <div id="hamburgerLine" class="hamburger__line">
       </div>
     </button>
-  </div>
 
-  <main>
     <section class="title">
       <img src="src/images/logo.png" alt="logo.png" class="title__img">
       <h6 class="title__subtitle">THAT'S WHAT WE CALL FASHION</h6>
     </section>
+  </div>
+
+  <main>
+
 
     <section class="hero">
       <div class="hero__text">
@@ -74,6 +80,7 @@
         <p class="hero__description">Niebanalna, pikowana kurtka wiosenna! Kurtka bardzo dobrze skrojona. Zapinana na napy. Wykonana z świetnej jakości materiału. Kurtka jest pikowana.</p>
       </div>
       <a href="#" class="button button__default">DOWIEDZ SIĘ WIĘCEJ</a>
+      <img src="src/images/heroImage.png" alt="heroImage.png">
     </section>
 
     <section class="latest">
@@ -81,6 +88,25 @@
         OSTATNIO OGLĄDANE:
       </header>
       <div class="items">
+        <div class="item__latest more">
+          <img src="src/images/redJacket.png" alt="redJacket.png" class="image__item--latest">
+        </div>
+        <div class="item__latest more">
+          <img src="src/images/whiteJacket.png" alt="whiteJacket.png" class="image__item--latest">
+        </div>
+        <div class="item__latest more">
+          <img src="src/images/greenJacket.png" alt="greenJacket.png" class="image__item--latest">
+        </div>
+        <div class="item__latest more">
+          <img src="src/images/navyJacket.png" alt="navyJacket.png" class="image__item--latest">
+        </div>
+        <div class="item__latest more">
+          <img src="src/images/redJacket.png" alt="redJacket.png" class="image__item--latest">
+        </div>
+        <div class="item__latest more">
+          <img src="src/images/whiteJacket.png" alt="whiteJacket.png" class="image__item--latest">
+        </div>
+
         <div class="item__latest">
           <img src="src/images/redJacket.png" alt="redJacket.png" class="image__item--latest">
         </div>
@@ -98,6 +124,7 @@
 
     <section class="products">
       <div class="choose">
+
         <div class="list">
           POLECANE
           <img src="src/images/down.png" alt="down.png" class="arrow">
@@ -152,7 +179,7 @@
             <h3>159,90 ZŁ</h3>
             <p>Parka zimowa K&L zielona (KM1519)</p>
           </div>
-        </div>
+          </div>
         <li>
           <img src="src/images/whiteJacket.png" alt="whiteJacket.png" class="image__item--latest image__product">
           <div class="description">
@@ -172,25 +199,30 @@
       <a href="#" class="button button__default">ZOBACZ WIĘCEJ PRODUKTÓW</a>
     </section>
 
-    <section class="footer">
+
+
+  </main>
+
+  <footer class="footer">
+
+    <div class="info__container">
       <header>
-        NEWSLETTER
+        INFORMACJE
       </header>
-      <div class="newsletter">
-        <input type="text" name="email" value="" label="input" placeholder="Wpisz swój adres e-mail..." class="input">
-        <a href="#" class="button button__confirm">ZAPISZ SIĘ</a>
-      </div>
-      <header>
-        KONTAKT
-      </header>
-      <div class="contact">
-        <a href="tel:+48 517 577 517">
-          <h1 class="phone">517 577 517</h1>
-        </a>
-        <a href="mailto:sklep@goodlookin.pl">
-          <p>sklep@goodlookin.pl</p>
-        </a>
-      </div>
+      <ul class="info">
+        <li><a href="#">Status zamówienia</a></li>
+        <li><a href="#">Zwroty, wymiana, reklamacje</a></li>
+        <li><a href="#">Regulamin sklepu</a></li>
+        <li><a href="#">Formy płatności</a></li>
+        <li><a href="#">Koszty dostawy</a></li>
+        <li><a href="#">O firmie</a></li>
+        <li><a href="#">Program lojalnościowy</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Polityka cookies sklepu</a></li>
+      </ul>
+    </div>
+
+    <div class="payment__container">
       <header>
         PŁATNOŚĆ I DOSTAWA
       </header>
@@ -206,28 +238,39 @@
           Powyższe ceny dotyczą wysyłki na terenie Polski</p>
         <p class="exclamation">30 dni na odstąpienie umowy!</p>
       </div>
+    </div>
+
+        <div class="contact__container">
+          <header>
+            NEWSLETTER
+          </header>
+          <div class="newsletter">
+            <input type="text" name="email" value="" label="input" placeholder="Wpisz swój adres e-mail..." class="input">
+            <a href="#" class="button button__confirm">ZAPISZ SIĘ</a>
+          </div>
       <header>
-        INFORMACJE
+        KONTAKT
       </header>
-      <ul class="info">
-        <li><a href="#">Status zamówienia</a></li>
-        <li><a href="#">Zwroty, wymiana, reklamacje</a></li>
-        <li><a href="#">Regulamin sklepu</a></li>
-        <li><a href="#">Formy płatności</a></li>
-        <li><a href="#">Koszty dostawy</a></li>
-        <li><a href="#">O firmie</a></li>
-        <li><a href="#">Program lojalnościowy</a></li>
-        <li><a href="#">Kontakt</a></li>
-        <li><a href="#">Polityka cookies sklepu</a></li>
-      </ul>
-    </section>
+      <div class="contact">
+        <a href="tel:+48 517 577 517">
+          <h1 class="phone">517 577 517</h1>
+        </a>
+        <a href="mailto:sklep@goodlookin.pl">
+          <p>sklep@goodlookin.pl</p>
+        </a>
+      </div>
+    </div>
 
-    <section class="copyright">
-      <p>Wszelkie prawa zastrzeżone przez &copy; goodlookin</p>
-      <p>Powered by i-systems.pl</p>
-    </section>
 
-  </main>
+
+
+
+  </footer>
+
+  <section class="copyright">
+    <p>Wszelkie prawa zastrzeżone przez &copy; goodlookin</p>
+    <p>Powered by i-systems.pl</p>
+  </section>
 
 </body>
 
