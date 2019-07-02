@@ -51,6 +51,14 @@ header {
   margin-bottom: 16px;
 }
 
+h4{
+  font-family: 'lovelo';
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
 button:active {
   border: none;
 }
@@ -683,7 +691,7 @@ button:active {
     padding-left: 0;
   }
 
-  .footer header {
+  .footer h4{
     justify-content: flex-start;
     margin: 16px;
   }
@@ -695,15 +703,13 @@ button:active {
   }
 
   .info__container {
-    flex-grow: .41;
+    width: 30%
   }
-
   .payment__container {
-    flex-grow: .37;
+    width: 50%
   }
-
   .contact__container {
-    flex-grow: .22;
+    width: 40%
   }
 
   .copyright {
