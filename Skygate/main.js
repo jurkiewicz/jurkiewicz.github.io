@@ -137,7 +137,7 @@ function description(el) {
       method: 'get',
       headers: {
             'Content-Type': 'application/json',
-            'Origin': '*'
+            'Origin': 'https://jurkiewicz.github.io/Skygate/'
       },
     })
     .then(response => {
